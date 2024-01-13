@@ -1,0 +1,13 @@
+node_modules
+dist
+examples/epubs
+settings.json
+.DS_Store
+yarn.lock
+.parcel-cache
+parcel-dist
+examples/epubs_
+examples/epubs__
+examples/epubs___
+examples/epubs____
+.vercel
