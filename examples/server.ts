@@ -56,13 +56,10 @@ async function start() {
   // @ts-ignore
   server.expressUse("/viewer", express.static(path.join(__dirname, "../dist")));
 
-  server.expressUse("/viewbook", async (req, res) => {
+  server.expressUse("/viewbook", (req, res) => {
     const url: any = req?.query?.url?.toString();
-    const publication = await server.loadOrGetCachedPublication(url);
-
-    res.redirect(
-      `/viewer/index_dita.html?url=http://localhost:4444${publication[0]}`
-    );
+    const info = server.addPublications([url]);
+    res.redirect(`/viewer/index_dita.html?url=http://localhost:4444${info[0]}`);
   });
 
   /**
