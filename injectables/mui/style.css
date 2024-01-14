@@ -2,7 +2,6 @@
  * Body CSS
  */
 
-
 html,
 body {
   height: 100%;
@@ -18,7 +17,6 @@ buttons {
   -moz-osx-font-smoothing: grayscale;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
 }
-
 
 /**
  * Layout CSS
@@ -146,9 +144,6 @@ header table {
   transition: transform 0.2s;
 }
 
-
-
-
 #content-wrapper {
   min-height: 100%;
   overflow-x: hidden;
@@ -167,8 +162,6 @@ header table {
   margin-left: 0px;
   transition: margin-left 0.2s;
 }
-
-
 
 /**
  * Toggle Sidedrawer
@@ -201,7 +194,6 @@ header table {
   transform: translate(-430px);
 }
 
-
 /**
  * Header CSS
  */
@@ -219,7 +211,6 @@ header table {
   /*color: #fff;*/
   text-decoration: none;
 }
-
 
 /**
  * Sidedrawer CSS
@@ -248,24 +239,29 @@ header table {
 }
 
 #sidedrawer strong:hover {
-  background-color: #E0E0E0;
+  background-color: #e0e0e0;
 }
 
 #sidedrawer strong + ul > li {
   padding: 6px 0px;
 }
 
-
 /**
  * Footer CSS
  */
 
 #footer {
-  background-color: #0288D1;
+  background-color: #0288d1;
   color: #fff;
 }
 
 #footer a {
   color: #fff;
   text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+  #sidedrawer8 {
+    width: 80%; /* Set to full width for smaller screens */
+  }
 }
