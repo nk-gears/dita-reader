@@ -226,7 +226,7 @@
                         </button>
                         </center>
                     </div>
-                    <div id="scrollMode" style="padding: 5px;padding-bottom: 10px">
+                    <!-- <div id="scrollMode" style="padding: 5px;padding-bottom: 10px">
                         <label style="display: block;
                                    text-align: center;
                                    line-height: 12pt;">Layout</label>
@@ -254,7 +254,7 @@
                             Paginated
                         </button>
                         </center>
-                    </div>
+                    </div> -->
                     <div id="textAlignment" style="padding: 5px;">
                         <label style="display: block;
         text-align: center;
@@ -555,13 +555,14 @@
                     <span class="mui--text-title">Search</span>
                 </div>
                 <div class="mui-divider"></div>
-                <div id="container-view-search" class="dropdown-content dropdown-tabbed notifications" style="width: 410px;padding: 10px;">
+                <div id="container-view-search" class="dropdown-content dropdown-tabbed notifications" style="width: 90%;padding: 10px;">
                     <div class="search-wrapper" tabindex="-1">
                         <i class="material-icons left" style="margin-right: -25px;position: relative;">search</i><input id="searchInput" placeholder="Search" style="padding-left: 25px; width: 100%;height: 40px;" type="text" />
                     </div>
-                        <ul class="mui-tabs__bar" style="display: flex;justify-content: space-evenly;">
-                            <li class="mui--is-active"><a data-mui-toggle="tab" data-mui-controls="pane-default-1">Current Chapter</a></li>
-                            <li><a data-mui-toggle="tab" data-mui-controls="pane-default-2">Entire Book</a></li>
+                        <ul class="mui-tabs__bar" style="display: flex;justify-content: space-evenly;
+                        ">
+                            <li class="mui--is-active"><a data-mui-toggle="tab" data-mui-controls="pane-default-1" style="padding-left: 15px; padding-right: 0px;">Current Chapter</a></li>
+                            <li><a data-mui-toggle="tab" data-mui-controls="pane-default-2" style="padding-left: 15px; padding-right: 15px;" >Entire Book</a></li>
                         </ul>
                         <div class="mui-tabs__pane mui--is-active" id="pane-default-1">
 
@@ -585,29 +586,29 @@
                         <tr>
                             <td class="mui--text-title">
                                 <a class="sidedrawer-toggle mui--visible-inline-block mui--visible-inline-block js-show-sidedrawer">☰</a>
-                                <span class="mui--text-title mui--visible-inline-block mui--visible-inline-block">DITA Reader</span>
+                                <!-- <span class="mui--text-title mui--visible-inline-block mui--visible-inline-block">DITA Reader</span>
                                 <a id="history-back" style="padding-left: 7px; padding-right: 7px;"><i class="material-icons ">arrow_back_ios</i></a>
                                 History
-                                <a id="history-forward" style="padding-left: 7px; padding-right: 7px;"><i class="material-icons ">arrow_forward_ios</i></a>
+                                <a id="history-forward" style="padding-left: 7px; padding-right: 7px;"><i class="material-icons ">arrow_forward_ios</i></a> -->
 
                             </td>
                             <td align="mui--text-right" style="text-align: right;padding-right: 10px">
                                 <ul class="mui-list--inline mui--text-body2">
-                                    <li><a class="saveBookmark" id="menu-button-bookmark-range"  onclick="d2reader.saveBookmarkPlus()"><i class="material-icons">bookmark_border</i></a></li>
-                                    <li><a class="saveBookmark" id="menu-button-bookmark"><i class="material-icons">bookmark</i></a></li>
-                                    <li><a id="menu-button-up" onclick="d2reader.lineUp()"><i class="material-icons">arrow_upward</i></a></li>
-                                    <li><a id="menu-button-down" onclick="d2reader.lineDown()"><i class="material-icons">arrow_downward</i></a></li>
+                                    <!-- <li><a class="saveBookmark" id="menu-button-bookmark-range"  onclick="d2reader.saveBookmarkPlus()"><i class="material-icons">bookmark_border</i></a></li> -->
+                                    <!-- <li><a class="saveBookmark" id="menu-button-bookmark"><i class="material-icons">bookmark</i></a></li> -->
+                                    <!-- <li><a id="menu-button-up" onclick="d2reader.lineUp()"><i class="material-icons">arrow_upward</i></a></li> -->
+                                    <!-- <li><a id="menu-button-down" onclick="d2reader.lineDown()"><i class="material-icons">arrow_downward</i></a></li> -->
 
-                                    <li><a id="menu-button-play" onclick="d2reader.startReadAlong()"><i class="material-icons">play_arrow</i></a>
-                                    <a id="menu-button-pause" onclick="d2reader.pauseReadAlong()" style="display: none"><i class="material-icons">pause</i></a></li>
+                                    <!-- <li><a id="menu-button-play" onclick="d2reader.startReadAlong()"><i class="material-icons">play_arrow</i></a> -->
+                                    <!-- <a id="menu-button-pause" onclick="d2reader.pauseReadAlong()" style="display: none"><i class="material-icons">pause</i></a></li> -->
 
-                                    <li><i class="material-icons" style="transform: rotate(90deg);color: lightgray">horizontal_rule</i></li>
-                                    <li><a class="mui--visible-inline-block  js-show-sidedrawer7" data-target="container-view-stamps-settings" id="menu-button-stamp"><i class="material-icons ">approval</i></a></li>
+                                    <!-- <li><i class="material-icons" style="transform: rotate(90deg);color: lightgray">horizontal_rule</i></li> -->
+                                    <!-- <li><a class="mui--visible-inline-block  js-show-sidedrawer7" data-target="container-view-stamps-settings" id="menu-button-stamp"><i class="material-icons ">approval</i></a></li> -->
 
-                                    <li><a class="mui--visible-inline-block  js-show-sidedrawer6" data-target="container-view-linefocus-settings" id="menu-button-linefocus"><i class="material-icons ">filter_center_focus</i></a></li>
-                                    <li><a class="mui--visible-inline-block  js-show-sidedrawer2" data-target="container-view-tts-settings" data-mui-toggle="dropdown" id="menu-button-tts"><i class="material-icons ">volume_up</i></a></li>
-                                    <li><a class="mui--visible-inline-block  js-show-sidedrawer4"  data-target="container-view-layer-settings" id="menu-button-layer"><i class="material-icons ">toggle_on</i></a></li>
-                                    <li><a class="mui--visible-inline-block  js-show-sidedrawer5"  data-target="container-view-mediaoverlay-settings" id="menu-button-mediaoverlay"><i class="material-icons ">record_voice_over</i></a></li>
+                                    <!-- <li><a class="mui--visible-inline-block  js-show-sidedrawer6" data-target="container-view-linefocus-settings" id="menu-button-linefocus"><i class="material-icons ">filter_center_focus</i></a></li> -->
+                                    <!-- <li><a class="mui--visible-inline-block  js-show-sidedrawer2" data-target="container-view-tts-settings" data-mui-toggle="dropdown" id="menu-button-tts"><i class="material-icons ">volume_up</i></a></li> -->
+                                    <!-- <li><a class="mui--visible-inline-block  js-show-sidedrawer4"  data-target="container-view-layer-settings" id="menu-button-layer"><i class="material-icons ">toggle_on</i></a></li> -->
+                                    <!-- <li><a class="mui--visible-inline-block  js-show-sidedrawer5"  data-target="container-view-mediaoverlay-settings" id="menu-button-mediaoverlay"><i class="material-icons ">record_voice_over</i></a></li> -->
                                     <li><a class="mui--visible-inline-block  js-show-sidedrawer3"  data-target="container-view-settings-custom" id="menu-button-settings" onclick="reload()"><i class="material-icons">settings</i></a></li>
 
                                     <li style="display:none"><a class="mui--visible-inline-block  js-show-sidedrawer8"  data-target="container-view-search"  id="menu-button-search"><i class="material-icons">search</i></a></li>
@@ -631,7 +632,7 @@
                 <div id="reader-info-top" class="info top">
                     <span class="book-title"></span>
                 </div>
-                <div id="reader-info-bottom" class="info bottom">
+                <!-- <div id="reader-info-bottom" class="info bottom">
                     <div style="display: flex;justify-content: center;">
                         <span class="chapter-position"></span>&nbsp;
                         <span class="chapter-title"></span>
@@ -639,7 +640,7 @@
                     <div class="scrubber">
                         <input class="range-slider__range" style="margin-left:30px;display: none" type="range" min="1" step="1" id="positionSlider" name="positionSlider" onchange="d2reader.goToPosition( this.value )" />
                     </div>
-                </div>
+                </div> -->
                 <div style="height: 0px">
                     <div id="highlight-toolbox" class="highlight-toolbox" >
                         <div id="highlight-toolbox-mode-colors">
@@ -659,11 +660,11 @@
                             <path d="M5 4v3h5.5v12h3V7H19V4z"></path>
                         </svg>
                     </span></button>
-                            <button style="background-color: gainsboro;" id="noteIcon"><span style="display: inline-block;width: 24px;height: 24px;border-bottom: yellow solid 4px;"><i class="material-icons" style="color:black">sticky_note_2</i></span></button>
-                            <button style="background-color: gainsboro;" id="bookmarkIcon"><span style="display: inline-block;width: 24px;height: 24px;"><i class="material-icons" style="color:black">bookmark</i></span></button>
+                            <!-- <button style="background-color: gainsboro;" id="noteIcon"><span style="display: inline-block;width: 24px;height: 24px;border-bottom: yellow solid 4px;"><i class="material-icons" style="color:black">sticky_note_2</i></span></button> -->
+                            <!-- <button style="background-color: gainsboro;" id="bookmarkIcon"><span style="display: inline-block;width: 24px;height: 24px;"><i class="material-icons" style="color:black">bookmark</i></span></button>
                             <button style="background-color: gainsboro;" id="citationIcon"><i class="material-icons">format_quote</i></button>
-                            <button style="background-color: gainsboro;" id="speakIcon"><span style="display: inline-block;width: 24px;height: 24px;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" role="img" class="icon open" aria-labelledby="speak-icon">
+                            <button style="background-color: gainsboro;" id="speakIcon"><span style="display: inline-block;width: 24px;height: 24px;"> -->
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" role="img" class="icon open" aria-labelledby="speak-icon">
                             <title id="speak-icon">Speak</title>
                             <circle cx="9" cy="9" r="4"></circle>
                             <path
@@ -672,7 +673,7 @@
                             <path d="M0 0h24v24H0z" fill="none"></path>
                         </svg>
                     </span></button>
-                            <button style="background-color: gainsboro;display: unset;" id="actionIcon" class="action-option"><i class="material-icons" style="color:gray">more_horiz</i></button>
+                            <button style="background-color: gainsboro;display: unset;" id="actionIcon" class="action-option"><i class="material-icons" style="color:gray">more_horiz</i></button> -->
 
                         </div>
                         <div id="highlight-toolbox-mode-edit">
@@ -765,7 +766,7 @@
             },
         ]
         let userSettings = {
-            // appearance: "readium-sepia-on", //readium-default-on, readium-night-on, readium-sepia-on
+                        // appearance: "readium-sepia-on", //readium-default-on, readium-night-on, readium-sepia-on
             // fontFamily: "serif", //Original, serif, sans-serif
             // textAlignment: "start", //"auto", "justify", "start"
             // columnCount: "1", // "auto", "1", "2"
@@ -959,24 +960,24 @@
                 margin: 75, // subtract this from the iframe height , when setting the iframe minimum height
                 navHeight: 10, // used for positioning the toolbox
                 iframePaddingTop: 20, // top padding inside iframe
-                bottomInfoHeight: 75, // #reader-info-bottom height
+                bottomInfoHeight: 25, // #reader-info-bottom height
             },
             rights: {
-                enableBookmarks: true,
+                // enableBookmarks: true,
                 enableAnnotations: true,
                 enableTTS: true,
                 enableSearch: true,
-                enableTimeline: true,
+                // enableTimeline: true,
                 enableDefinitions: true,
                 enableContentProtection: true,
-                enableMediaOverlays: true,
+                // enableMediaOverlays: true,
                 enablePageBreaks: true,
                 autoGeneratePositions: true,
                 enableLineFocus: true,
                 customKeyboardEvents: false,
-                enableHistory: true,
-                enableCitations: true,
-                enableConsumption: true,
+                // enableHistory: true,
+                // enableCitations: true,
+                // enableConsumption: true,
             },
             consumption: {
                 enableTrackingSession: true,
@@ -1428,14 +1429,14 @@
         }
 
         function setScroll(scroll) {
-            let buttons = document.getElementById('scrollMode').getElementsByTagName('button');
-            if (scroll === 'true') {
-                buttons[0].style.backgroundColor = '#d7dcdf'
-                buttons[1].style.backgroundColor = 'white'
-            } else if (scroll === 'false') {
+            // let buttons = document.getElementById('scrollMode').getElementsByTagName('button');
+            // if (scroll === 'true') {
+            //     buttons[0].style.backgroundColor = '#d7dcdf'
+            //     buttons[1].style.backgroundColor = 'white'
+            // } else if (scroll === 'false') {
                 buttons[1].style.backgroundColor = '#d7dcdf'
                 buttons[0].style.backgroundColor = 'white'
-            }
+            
         }
 
         function setAlignment(textAlignment) {
