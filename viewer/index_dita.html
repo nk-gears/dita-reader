@@ -226,7 +226,7 @@
                         </button>
                         </center>
                     </div>
-                    <div id="scrollMode" style="padding: 5px;padding-bottom: 10px">
+                    <!-- <div id="scrollMode" style="padding: 5px;padding-bottom: 10px">
                         <label style="display: block;
                                    text-align: center;
                                    line-height: 12pt;">Layout</label>
@@ -254,7 +254,7 @@
                             Paginated
                         </button>
                         </center>
-                    </div>
+                    </div> -->
                     <div id="textAlignment" style="padding: 5px;">
                         <label style="display: block;
         text-align: center;
@@ -766,7 +766,7 @@
             },
         ]
         let userSettings = {
-            // appearance: "readium-sepia-on", //readium-default-on, readium-night-on, readium-sepia-on
+                        // appearance: "readium-sepia-on", //readium-default-on, readium-night-on, readium-sepia-on
             // fontFamily: "serif", //Original, serif, sans-serif
             // textAlignment: "start", //"auto", "justify", "start"
             // columnCount: "1", // "auto", "1", "2"
@@ -960,7 +960,7 @@
                 margin: 75, // subtract this from the iframe height , when setting the iframe minimum height
                 navHeight: 10, // used for positioning the toolbox
                 iframePaddingTop: 20, // top padding inside iframe
-                bottomInfoHeight: 75, // #reader-info-bottom height
+                bottomInfoHeight: 25, // #reader-info-bottom height
             },
             rights: {
                 // enableBookmarks: true,
@@ -970,7 +970,7 @@
                 // enableTimeline: true,
                 enableDefinitions: true,
                 enableContentProtection: true,
-                enableMediaOverlays: true,
+                // enableMediaOverlays: true,
                 enablePageBreaks: true,
                 autoGeneratePositions: true,
                 enableLineFocus: true,
@@ -1429,14 +1429,14 @@
         }
 
         function setScroll(scroll) {
-            let buttons = document.getElementById('scrollMode').getElementsByTagName('button');
-            if (scroll === 'true') {
-                buttons[0].style.backgroundColor = '#d7dcdf'
-                buttons[1].style.backgroundColor = 'white'
-            } else if (scroll === 'false') {
+            // let buttons = document.getElementById('scrollMode').getElementsByTagName('button');
+            // if (scroll === 'true') {
+            //     buttons[0].style.backgroundColor = '#d7dcdf'
+            //     buttons[1].style.backgroundColor = 'white'
+            // } else if (scroll === 'false') {
                 buttons[1].style.backgroundColor = '#d7dcdf'
                 buttons[0].style.backgroundColor = 'white'
-            }
+            
         }
 
         function setAlignment(textAlignment) {
